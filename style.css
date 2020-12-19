@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+:root {
+  --darkGray: #333333;
+  --gray: #555555;
+  --lightGray: #727272;
+  --green: #09d977;
+  --darkBlue: #3f3d56;
+  --blue: #0898dd;
+  --lightBlue: #0fbdca;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color: var(--gray);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Remove Black outline on chrome */
+*:focus {
+  outline: none;
+}
+
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 20px 400px;
+  max-width: 1440px;
+}
+
+.main {
+  margin: 0 0 0 50px;
+}
+
+/* Navbar */
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin: 50px 0;
+}
+
+.navbar h1 {
+  font-size: 1.7rem;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 105px);
+  gap: 15px;
+  justify-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.menu .item {
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--lightGray);
+  padding: 5px 15px;
+  text-transform: capitalize;
+  border-radius: 10px;
+  transition: all 0.7s;
+}
+
+.menu .item:hover,
+.item:nth-child(2) {
+  background-color: var(--green);
+
+  color: white;
+  cursor: pointer;
+}
+
+/* Main */
+/* Featured */
+.featured {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 350px;
+  justify-items: flex-start;
+  align-items: center;
+}
+
+.featuredDesc .title {
+  font-size: 2.7rem;
+  font-weight: 900;
+  color: var(--darkGray);
+  margin-top: 40px;
+}
+
+.featuredDesc .desc {
+  font-size: 1rem;
+  font-weight: bold;
+  width: 250px;
+  color: var(--lightGray);
+}
+
+.featuredDesc button {
+  border: 2px solid var(--green);
+  background-color: var(--green);
+  padding: 6px 35px;
+  border-radius: 20px;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  transition: all 0.7s;
+}
+
+.featuredDesc button:hover {
+  background-color: white;
+  border-color: var(--green);
+  color: var(--green);
+  cursor: pointer;
+}
+
+/* Banner */
+.banner {
+  background-image: linear-gradient(var(--green), var(--darkBlue));
+}
+/* Section */
+.profile {
+  background-color: var(--lightGray);
+  margin: 0 50px 0 0;
+}
