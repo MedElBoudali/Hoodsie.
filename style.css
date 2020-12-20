@@ -234,7 +234,7 @@ p {
   width: 40px;
 }
 
-/* activities details */
+/* Activities details */
 .activities-details {
   grid-area: activities-details;
   justify-self: center;
